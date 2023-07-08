@@ -1,8 +1,9 @@
 import json
 import boto3
-from datetime import datetime
+from datetime 
 from io import StringIO
 import pandas as pd 
+
 
 def album(data):
     album_list = []
@@ -16,6 +17,7 @@ def album(data):
                             'total_tracks':album_total_tracks,'url':album_url}
         album_list.append(album_element)
     return album_list
+
     
 def artist(data):
     artist_list = []
@@ -26,6 +28,7 @@ def artist(data):
                     artist_dict = {'artist_id':artist['id'], 'artist_name':artist['name'], 'external_url': artist['href']}
                     artist_list.append(artist_dict)
     return artist_list
+
     
 def songs(data):
     song_list = []
