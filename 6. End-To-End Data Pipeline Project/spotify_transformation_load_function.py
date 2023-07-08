@@ -48,7 +48,7 @@ def songs(data):
         song_list.append(song_element)
         
     return song_list
-    
+    #
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
     Bucket = "spotify-etl-project-darshil"
